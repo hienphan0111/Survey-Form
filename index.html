@@ -6,16 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Space+Mono&family=Work+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
     <div class="container">
         <form action="" id="survey-form"></form>
-        <fieldset>
-            <label for="name">Name <input type="text" id="name" placeholder="Enter your name" name="name" required></label>
-            <label for="email">Email <input type="email" id="email" placeholder="Enter your email" name="email" required></label>
-            <label for="age">Age (optional) <input type="number" id="age" name="age"></label>
+        <fieldset class="one">
+            <div class="inline">
+                <label for="name">Name </label> <input type="text" id="name" placeholder="Enter your name" name="name" required>
+            </div>
+            <div class="inline">
+                <label for="email">Email </label> <input type="email" id="email" placeholder="Enter your email" name="email" required>
+            </div>
+            <div class="inline">
+                <label for="age">Age (optional)</label> <input type="number" id="age" name="age">
+            </div>
+            <div class="inline">
             <label for="describles">Which option best describes current role
                 <select name="describes" id="describes">
                     <option value="">Select current role</option>
@@ -26,6 +36,7 @@
                     <option value="other">Other</option>
                 </select>
             </label>
+        </div>
         </fieldset>
         <fieldset >
             <label for="recommend"> Would you recommend freeCodeCamp to a friend </label>
@@ -46,14 +57,24 @@
         <fieldset >
             <label for="">What would you like to see improved?</label>
             <p>(Check all that apply)</p>
-            <input type="checkbox" id="front-end"><label for="front-end"> Front-end Projects</label>
-            <input type="checkbox" id="back-end"><label for="back-end">Back-end Projects</label>
+            <div class="inline">
+                <input type="checkbox" id="front-end"><label for="front-end"> Front-end Projects</label>
+            </div>
+            <div class="inline"></div>
+            <input type="checkbox" id="back-end"><label for="back-end"> Back-end Projects</label>
+            <div class="inline"></div>
             <input type="checkbox" id="data-visualization"><label for="data-visualization">Data Visualization</label>
+            <div class="inline"></div>
             <input type="checkbox" id="challanges"><label for="challanges">Challanges</label>
-            <input type="checkbox" id="open-source"><label for="open-source">Open source Community</label>
-            <input type="checkbox" id="gitter"><label for="gitter">Gitter help room</label>
-            <input type="checkbox" id="videos"><label for="videos">Video</label>
-            <input type="checkbox" id="city"><label for="city">City Meetups</label>
+            <div class="inline"></div>
+            <input type="checkbox" id="open-source"><label for="open-source"> Open source Community</label>
+            <div class="inline"></div>
+            <input type="checkbox" id="gitter"><label for="gitter"> Gitter help room</label>
+            <div class="inline"></div>
+            <input type="checkbox" id="videos"><label for="videos"> Video</label>
+            <div class="inline"></div>
+            <input type="checkbox" id="city"><label for="city"> City Meetups</label>
+            <div class="inline"></div>
             <input type="checkbox" id="wiki"><label for="wiki">Wiki</label>
         </fieldset>
         <fieldset >

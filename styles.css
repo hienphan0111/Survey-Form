@@ -4,7 +4,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
-    font-family: 'Poppins', sans-serif
+    font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 h1, #description {
@@ -15,15 +16,65 @@ h1, #description {
 .container {
     width: 600px;
     margin: 0 auto;
-    padding: 5px;
-    background-color:
+    padding: 30px;
+    background-color: rgba(39, 39, 66, 0.6);
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
 }
 
 fieldset {
     border: none;
-    margin: 2em 0;
+    display: block;
 }
 
-input {
+.one{
     display: block;
+}
+
+input, label, select {
+    display: block;
+    margin: 5px 0;
+}
+.inline {
+    margin-top: 20px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    display: unset;
+}
+
+input[type="checkbox"], fieldset label {
+    display: inline-block;
+    margin: 0;
+}
+div input {
+    width: 100%;
+    height: 2em;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.describles {
+    margin-top: 20px;
+}
+
+select {
+    width: 100%;
+    height: 2em;
+    font-size: 18px;
+    color: gray;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 2.5em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: rgba(52, 237, 77, 0.891);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
